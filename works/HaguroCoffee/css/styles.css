@@ -571,8 +571,8 @@ small {
   font-size: 12px;
 }
 
-
-@media (min-width: 860px) {
+/* @media (min-width: 860px) */
+@media (min-width: 950px) {
   .container {
     max-width: 860px;
     width: 860px;
