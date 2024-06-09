@@ -728,7 +728,7 @@ footer small {
 }
 
 /* @media (min-width: 860px) */
-@media (min-width: 1100px) {
+@media (min-width: 950px) {
   .container {
     max-width: 860px;
     width: 860px;
