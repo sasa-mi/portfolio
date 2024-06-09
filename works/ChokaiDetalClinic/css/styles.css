@@ -1,0 +1,939 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+	scroll-padding: 96px;
+	scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-align: center;
+
+  /* background: #eee;
+  background-image:
+    url(../img/circleA.png),
+    url(../img/circleB.png);
+  background-position:
+    left 0px top,
+    right 0px top;
+  background-repeat:
+    repeat-y;,
+    repeat-y;
+  background-size:
+    50px; */
+}
+
+.container {
+  padding: 48px 24px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #fff;
+  background: #4797d1;
+  height: 56px;
+  line-height: 56px;
+}
+
+.sp-h1 {
+  display: block;
+}
+
+.pc-h1 {
+  display: none;
+}
+
+/* ヘッダー */
+header {
+  background: #a4c2e3;
+  height: 96px;
+  line-height: 96px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 96px;
+  padding: 0 24px;
+}
+
+.sp-logo {
+  display: block;
+}
+
+.sp-menu {
+  display: block;
+  font-size: 32px;
+}
+
+.sp-menu #open {
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  z-index: 5;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay li {
+  margin-top: 24px;
+}
+
+.overlay a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.overlay nav ul li {
+  display: block;
+  list-stye: none;
+  font-size: 24px;
+  line-height: 48px;
+  border-bottom: 1px dashed #4797d1;
+}
+
+.pc-logo {
+  display: none;
+}
+
+.pc-header-right {
+  display: none;
+}
+
+/* ヒーロー */
+.hero-img {
+  height: 460px;
+  background: #f4f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 96px;
+}
+
+.hero-message {
+  height: 120px;
+  background: #bfdeec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-message img {
+  object-fit: contain;
+}
+
+.sp-hero-message-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  padding: 0 20px;
+}
+
+.pc-hero-message-text {
+  display: none;
+}
+
+/* 当医院について */
+.outline {
+  height: 608px;
+}
+
+
+
+/* .outline > .container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.outline > .container > .outline-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.outline-text {
+}
+
+.outline-img {
+  height: 240px;
+  margin-top: 36px;
+}
+
+.outline-text a {
+  display: block;
+  color: #4797d1;;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 4px 0;
+}
+
+/* お知らせ */
+.information ul {
+  list-style: none;
+
+}
+
+.information ul li {
+  border-bottom: 1px dashed #4797d1;
+  margin-top: 8px;
+}
+
+.information ul li:first-child {
+  margin-top: 0;
+}
+
+.information ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.information ul li i {
+  color: #4797d1;
+}
+
+.information-img {
+  height: 84px;
+  margin-top: 36px;
+}
+
+
+/* アクセス */
+
+.access > .container {
+  padding: 48px 24px 180px;
+}
+
+.access-map iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 4px;
+  margin-top: 16px;
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+
+.medical-hours h2 {
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 1px dashed #4797d1;
+  padding-bottom: 4px;
+  margin-top: 28px;
+}
+
+.medical-hours {
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.medical-hours table {
+  border-collapse: collapse;
+  margin-top: 8px;
+  width: 100%;
+  height: 140px;
+  margin-bottom: 8px;
+}
+
+.medical-hours table td {
+  background: #e3f1f1;
+  padding: 0 12px;
+}
+
+.medical-hours table .time {
+  background: #bedaef;
+  text-align: right;
+  width: 20%;
+}
+
+.medical-hours table .white > td {
+  background: #fff;
+}
+
+.access small {
+  font-size: 14px;
+}
+
+
+/* 診療案内 */
+.summary {
+  margin-top: 96px;
+}
+
+.summary > .container {
+  padding: 48px 24px 180px;
+}
+
+.summary h2 {
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 1px dashed #4797d1;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+}
+
+.summary-detail {
+  margin-top: 32px;
+}
+
+.summary-detail:first-of-type {
+  margin-top: 0;
+}
+
+.summary-detail h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.summary-detail span {
+  color: #4797d1;
+}
+
+.summary-img {
+  margin-top: 24px;
+}
+
+
+/* Web予約・お問合せ */
+.contact {
+  margin-top: 96px;
+  /* background: #eee; */
+}
+
+.contact > .container {
+  padding: 48px 24px 96px;
+  margin-bottom: 0;
+}
+
+.contact form dl dd input, select {
+ width: 100%;
+ height: 44px;
+ margin: 0 auto;
+ padding: 12px;
+ border: none;
+ border-radius: 4px;
+ margin-top: 8px;
+ margin-bottom: 12px;
+ outline: solid 1px #4797d1;
+ background: #fff;
+}
+
+.contact form dl dd select {
+  color: #4797d1;
+  font-size: 14px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.contact form dl dd select > option {
+  padding-right: 20px;
+}
+
+.contact form dl dd textarea {
+ width: 100%;
+ margin: 0 auto;
+ padding: 12px;
+ border: none;
+ border-radius: 4px;
+ margin-bottom: 20px;
+ height: 200px;
+ margin-top: 8px;
+ outline: solid 1px #4797d1;
+ background: #fff;
+}
+
+.contact form dl dd input:focus {
+  background: #e3f1f1;
+  outline: none;
+}
+
+ .contact form dl dd textarea:focus {
+  background: #e3f1f1;
+  outline: none;
+}
+
+.contact button {
+  display: block;
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 26px;
+  border: none;
+}
+
+.contact button a {
+  display: block;
+  background-color: #4797d1;
+  /* border-radius: 4px; */
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  height: 52px;
+  border-radius: 26px;
+  line-height: 52px;
+}
+
+.contact-footer small {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/* フッター・Web予約・お問合せはこちら */
+.reservation {
+  background: #4797d1;
+  height: 84px;
+  line-height: 84px;
+}
+
+.reservation a {
+  font-size: 24px;
+  line-height: 84px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.reservation img {
+  object-fit: contain;
+}
+
+footer {
+  height: 132px;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer small {
+  display: inline-block;
+  background: #a4c2e3;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+
+@media (min-width: 860px) {
+  .container {
+    max-width: 860px;
+    width: 860px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+
+  .sp-h1 {
+    display: none;
+  }
+
+  .pc-h1 {
+    display: block;
+  }
+
+  /* ヘッダー */
+  header {
+    background: #a4c2e3;
+    height: 120px;
+    line-height: 120px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0 24px;
+  }
+
+  .sp-logo {
+    display: none;
+  }
+
+  .sp-menu {
+    display: none;
+  }
+
+  .pc-logo {
+    display: block;
+  }
+
+  .pc-header-right {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    height: 120px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pc-telephone {
+    background: #fff;
+    color: #4797d1;
+    display: block;
+    width: 240px;
+    border-radius: 8px;
+    height: 60px;
+    margin-left: auto;
+    margin-top: 12px;
+    padding: 8px 16px;
+  }
+
+  .pc-telephone p {
+  line-height: 1;
+  }
+
+  .pc-telephone-text {
+    font-size: 16px;
+  }
+
+  .pc-telephone-number {
+    margin-top: 6px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  header nav {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+
+    margin-bottom:20px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 8px 8px;
+  }
+
+  header nav ul {
+    margin-top: 0;
+    display: flex;
+  }
+
+  header nav ul li {
+    line-height: 20px;
+    display: block;
+    list-stye: none;
+    font-size: 20px;
+    display: inline-block;
+    transition-duration: .3s;
+    margin-left: 8px;
+  }
+
+  header nav ul li a {
+  position: relative;
+  }
+
+  header nav ul li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #4797d1;
+  }
+
+  header nav ul li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #4797d1;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform 0.3s;
+  }
+
+  header nav ul li a:hover::after {
+    transform: scale(1, 1);
+  }
+
+
+  /* ヒーロー */
+
+  .hero-img {
+    height: 500px;
+    width: 100%;
+    background: #f4f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .hero-img > img {
+    height: 380px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .sp-hero-message-text {
+    display: none;
+  }
+
+  .pc-hero-message-text {
+    display: block;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
+
+  /* 当医院について */
+
+  h1 {
+    font-weight: 500;
+    font-size: 28px;
+    color: #fff;
+    background: #4797d1;
+    height: 56px;
+    line-height: 56px;
+    width: 50%;
+    text-align: left;
+    border-radius: 4px 28px 28px 4px;
+    padding-left: 20px;
+    margin-bottom: 32px;
+  }
+
+  .outline {
+    height: calc(388px + 60px);
+  }
+
+  .outline > .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .outline > .container > .outline-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .outline-text {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-right: 160px;
+    line-height: 2;
+  }
+
+  .outline-img {
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .outline-text a {
+    display: block;
+    color: #4797d1;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 4px 0;
+    transition: 0.3s;
+    padding: 0 8px;
+    margin-left: -8px;
+  }
+
+  .outline-text a:hover {
+    background: #e3f1f1;
+    color: #000;
+  }
+
+
+  /* お知らせ */
+  .information {
+    height: calc(262px + 60px);
+  }
+
+  .information-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .information ul {
+    width: 70%;
+    margin-left: 60px;
+  }
+
+  .information ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+
+  .information-img {
+    margin-top: 20px;
+  }
+
+  .information ul li {
+    transition: 0.3s;
+  }
+
+  .information ul li:hover {
+    background: #e3f1f1;
+  }
+
+
+  /* アクセス */
+
+  .access > .container {
+    padding: 60px 24px 192px;
+    height: calc(752px + 60px);
+  }
+
+  .access-container {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    line-height: 2;
+  }
+
+  .access-address {
+    width: 40%;
+  }
+
+  .access-map {
+    width: 60%;
+  }
+
+  .access-map iframe {
+    margin-top: 0;
+    height: 280px;
+  }
+
+  .medical-hours {
+    display: flex;
+    text-align: left;
+    margin-top: 32px;
+    justify-content: space-between;
+  }
+
+  .medical-hours-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .medical-hours-h2 {
+    margin: 0;
+    padding: 0;
+    width: calc(40% - 32px);
+
+  }
+
+  .medical-hours-h2 > h2 {
+    margin-top: 12px;
+    letter-spacing: 24px;
+    padding-left: 16px;
+  }
+
+  .medical-hours-container {
+    margin: 0;
+    width: 60%;
+  }
+
+  .medical-hours-container table {
+    margin: 0;
+  }
+
+
+  /* 診療案内 */
+  .summary {
+    margin-top: 120px;
+    text-align: left;
+  }
+
+  .summary-h2 {
+    /* width: calc(40% - 32px); */
+  }
+
+  .summary-h2 > h2 {
+    /* margin-top: 12px; */
+    letter-spacing: 24px;
+    padding-left: 16px;
+    display: inline;
+  }
+
+  .summary-container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summary-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+
+  }
+
+  .summary-text {
+    width: 300px;
+  }
+
+  .summary-img {
+    width: 210px;
+    text-align: center;
+  }
+
+  .summary-detail:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .summary-detail > .summary-img {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* コンタクト */
+
+  .contact {
+    margin-top: 120px;
+  }
+
+  .contact form {
+    margin: 0 auto;
+    line-height: 1;
+    vertical-align: top;
+  }
+
+  .contact form dl {
+   display: flex;
+   flex-wrap: wrap;
+    width: 100%;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .contact form dl dt {
+   width: 20%;
+   text-align: left;
+   line-height: 1;
+   margin: 0;
+   padding: 0;
+  }
+
+  .contact form dl dd {
+   width: 80%;
+   text-align: left;
+   line-height: 1;
+   margin: 0;
+   padding: 0;
+  }
+
+  .contact form dl dd input {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact form dl dd select {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact form dl dd textarea {
+    margin-top: 0;
+  }
+
+  .contact .button {
+    display: flex;
+  }
+
+  .contact .button > span {
+    width: 20%;
+  }
+
+  .contact button {
+    width: 80%;
+    line-height: 1;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact button a:hover {
+    background: #e3f1f1;
+    color: #4797d1;
+  }
+}
