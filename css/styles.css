@@ -51,7 +51,7 @@ header > .container {
   align-items: center;
   text-align: center;
   height: calc(100% - 20px - 20px);
-/*   width: 100%; */
+  width: 100%;
 
   border: solid 2px #fff;    	/* 内側の線になる一本線の枠線をひく*/
 	outline: solid 4px #fff;    /* 外側の線になる5pxの一本線の枠線をひく*/
