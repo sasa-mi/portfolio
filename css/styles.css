@@ -78,7 +78,7 @@ header > .container {
   justify-content: center;
   align-items: center;
 /*   font-size: 60px; */
-  font-size: 42px;
+  font-size: 48px;
   line-height: 1.5;
   display: block;
   font-family: "M PLUS 1p", sans-serif;
@@ -91,7 +91,7 @@ header > .container {
 }
 
 .sp-title > p {
-  font-size: 42px;
+  font-size: 48px;
 }
 
 .sp-title > p > span {
