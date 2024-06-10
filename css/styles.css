@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@media screen and (max-width: 360px) {
+
 * {
   margin: 0;
   padding: 0;
@@ -725,6 +727,8 @@ footer {
 footer small {
   font-size: 12px;
   line-height: 48px;
+}
+
 }
 
 /* @media (min-width: 860px) */
