@@ -445,7 +445,8 @@ header > .container {
 }
 
 .contents-text {
-  height: 116px;
+/*   height: 116px; */
+  height: 136px;
 }
 
 .contents-text > h3 {
