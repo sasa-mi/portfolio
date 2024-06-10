@@ -280,6 +280,8 @@ header > .container {
   padding-top: 4px;
 }
 
+.section-sub-title > .sp-profile-h2 > h2,
+.section-sub-title > .pc-profile-h2 > h2,
 .section-sub-title > h2 {
   letter-spacing: 12px;
   font-weight: 100;
@@ -291,6 +293,8 @@ header > .container {
   left: 28px;
 }
 
+.section-sub-title > .sp-profile-h2 > h2 > span,
+.section-sub-title > .pc-profile-h2 > h2 > span,
 .section-sub-title > h2 > span {
   font-weight: 400;
   color: #FAFDCB;
@@ -491,13 +495,13 @@ section > .container > .section-contents_container > small > a {
 
 /* profile */
 
-/* .sp-profile-h2 {
+.sp-profile-h2 {
   display: block;
 }
 
 .pc-profile-h2 {
   display: none;	
-} */
+}
 
 .profile {
   /* background-image: linear-gradient(0deg, rgba(249, 228, 231, 1), rgba(227, 238, 255, 1)); */
@@ -891,12 +895,12 @@ footer small {
     width: calc(100% - 132px);
   }
 
-/*   .sp-profile-h2 {
+  .sp-profile-h2 {
   display: none;
 }
 
 .pc-profile-h2 {
   display: block;	
-} */
+}
 
 }
