@@ -486,6 +486,15 @@ section > .container > .section-contents_container > small > a {
 
 
 /* profile */
+
+.sp-profile-h2 {
+  display: block;
+}
+
+.pc-profile-h2 {
+  display: none;	
+}
+
 .profile {
   /* background-image: linear-gradient(0deg, rgba(249, 228, 231, 1), rgba(227, 238, 255, 1)); */
   /* background: #E2ECDA; */
@@ -877,5 +886,13 @@ footer small {
   .profile-section-contents > .section-contents > .contents > .skill > .skill-container >  .skill-level-container {
     width: calc(100% - 132px);
   }
+
+  .sp-profile-h2 {
+  display: none;
+}
+
+.pc-profile-h2 {
+  display: block;	
+}
 
 }
