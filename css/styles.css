@@ -78,20 +78,20 @@ header > .container {
   justify-content: center;
   align-items: center;
 /*   font-size: 60px; */
-  font-size: 32px;
+  font-size: 42px;
   line-height: 1.5;
   display: block;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 100;
   font-style: normal;
 /*   letter-spacing: 20px; */
-  letter-spacing: 0;
+  letter-spacing: 8px;
   text-align: center;
   margin: 0 auto;
 }
 
 .sp-title > p {
-  font-size: 32px;
+  font-size: 42px;
 }
 
 .sp-title > p > span {
