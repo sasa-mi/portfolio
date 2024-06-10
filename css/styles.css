@@ -76,14 +76,15 @@ header > .container {
   /* margin-top: 20px; */
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+/*   font-size: 60px; */
+  font-size: 48px;
   line-height: 1.5;
   display: block;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 100;
   font-style: normal;
   letter-spacing: 20px;
-  padding: 0 20px;
+  
 }
 
 .sp-menu {
