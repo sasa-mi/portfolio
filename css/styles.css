@@ -78,7 +78,7 @@ header > .container {
   justify-content: center;
   align-items: center;
 /*   font-size: 60px; */
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.5;
   display: block;
   font-family: "M PLUS 1p", sans-serif;
@@ -87,6 +87,14 @@ header > .container {
   letter-spacing: 20px;
   text-align: center;
   margin: 0 auto;
+}
+
+.sp-title > p {
+  font-size: 24px;
+}
+
+.sp-title > p > span {
+  letter-spacing: 0;
 }
 
 .sp-menu {
