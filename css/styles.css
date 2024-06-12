@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-/* @media screen and (max-width: 360px) { */
-
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +7,9 @@
   color: #666;
 }
 
-
 :root{
-  /* scroll-padding: 400px; */
 	scroll-behavior: smooth;
 }
-
 
 body {
   font-size: 16px;
@@ -22,30 +17,30 @@ body {
   font-weight: 100;
   font-style: normal;
   text-align: center;
-  /* background: rgba(249, 228, 231, 1); */
 }
 
 .container {
-/*   padding: 80px 36px; */
   padding: 80px 24px;
 }
 
+.banner-img {
+  box-shadow: 0px 0px 8px #ccc;
+}
+
+.comp-img {
+  box-shadow: 0px 0px 8px #ccc;
+}
 
 /* ヘッダー */
 
 header {
-  /* background-image: linear-gradient(0deg, rgba(255, 252, 219, 1), rgba(220, 255, 242, 1)); */
-
   background: #DCE6C9;
-
-  /* position: relative; */
   height: 520px;
   width: 100%;
   display: flex;
 }
 
 header > .container {
-  /* padding: 100px 40px; */
   display: block;
   display: flex;
   justify-content: center;
@@ -54,17 +49,18 @@ header > .container {
   height: calc(100% - 20px - 20px);
   width: 100%;
 
-  border: solid 2px #fff;    	/* 内側の線になる一本線の枠線をひく*/
-	outline: solid 4px #fff;    /* 外側の線になる5pxの一本線の枠線をひく*/
-	outline-offset: 4px;        /* 内側の線になる一本線の枠線をひく*/
-	margin: 20px;            	/* outlineの値＋outline-offsetの値*/
+  border: solid 2px #fff;
+	outline: solid 4px #fff;
+	outline-offset: 4px;
+	margin: 20px;
+
   z-index: 2;
 }
 
 .pc-title {
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.3;
   display: none;
   font-family: "M PLUS 1p", sans-serif;
@@ -74,17 +70,14 @@ header > .container {
 }
 
 .sp-title {
-  /* margin-top: 20px; */
   justify-content: center;
   align-items: center;
-/*   font-size: 60px; */
   font-size: 48px;
   line-height: 1.5;
   display: block;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 100;
   font-style: normal;
-/*   letter-spacing: 20px; */
   letter-spacing: 8px;
   text-align: center;
   margin: 0 auto;
@@ -102,8 +95,8 @@ header > .container {
   display: block;
   font-size: 32px;
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 24px;
+  right: 24px;
   position: fixed;
   z-index: 5;
 }
@@ -154,8 +147,8 @@ header > .container {
 
 .overlay #close {
   position: absolute;
-  top: 39px;
-  right: 46px;
+  top: 31px;
+  right: 38px;
   font-size: 32px;
   cursor: pointer;
   color: #666;
@@ -175,7 +168,6 @@ header > .container {
   list-style: none;
   font-size: 32px;
   line-height: 48px;
-  /* border-bottom: 1px dashed #ccc; */
 }
 
 .pc-menu {
@@ -194,7 +186,6 @@ header > .container {
   padding: 0 40px;
   line-height: 40px;
   transition: .3s;
-
 }
 
 .pc-menu a:hover {
@@ -212,8 +203,6 @@ header > .container {
 
 /* works, profile 共通 */
 .works {
-  /* background-image: linear-gradient(0deg, rgba(255, 254, 245, 1), rgba(225, 249, 255, 1)); */
-
   background: #EEF0E6;
 }
 
@@ -298,7 +287,6 @@ header > .container {
   text-align: left;
   position: relative;
   top: 10px;
-  left: 36px;
   left: 28px;
 }
 
@@ -323,20 +311,15 @@ header > .container {
   border-radius: 8px;
   padding: 24px 24px;
   width: 100%;
-/*   height: 500px; */
   height: 520px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
-
 .pc-section-contents > .contents {
   background: inherit;
   padding: 0;
-  /* height: 420px; */
-  /* height: 508px; */
   height: 100%;
   margin-bottom: 64px;
 }
@@ -349,22 +332,14 @@ header > .container {
   background: #fff;
   border-radius: 8px;
   padding: 4px 24px 24px;
-  /* height: 140px; */
-  /* height: 228px; */
   height: 192px;
   margin-top: 20px;
   line-height: 1.8;
 }
 
-/* .pc-section-contents > .contents > .contents-text-2l {
-  background: #fff;
-  border-radius: 8px;
-  padding: 4px 24px 24px;
-  height: 192px;
-  margin-top: 20px;
-  line-height: 1.8;
-  display: block;
-} */
+.pc-section-contents > .contents > .detail-text {
+  height: 164px;
+}
 
 .pc-section-contents > .contents > .contents-text > p > a {
   text-decoration: none;
@@ -377,36 +352,45 @@ header > .container {
 }
 
 .detail-section-contents_container > .pc-section-contents > .contents > .comprehensive-layout > .comp-container:first-of-type {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .detail-section-contents_container > .pc-section-contents > .contents > .comprehensive-layout > .comp-container > h4 {
   font-weight: 300;
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  background: #b4cce3;
+  color: #fff;
+  line-height: 40px;
 }
 
 .detail-section-contents_container > .pc-section-contents > .contents > .comprehensive-layout > .comp-container > img {
   vertical-align: bottom;
   width: 100%;
-  /* margin-bottom: 16px; */
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .detail-section-contents_container > .pc-section-contents > .contents > .comprehensive-layout > .comp-container > img:last-child {
   margin-bottom: 0;
 }
 
-.pc-section-contents > .contents > .contents-text > p > .back {
+/* .pc-section-contents > .contents > .contents-text > p > .back {
+  border-bottom: 1px dashed #ccc;
+} */
+
+.pc-section-contents > .contents > a {
+  text-decoration: none;
+  font-size: 18px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 52px;
+}
+
+.pc-section-contents > .contents > .back {
   border-bottom: 1px dashed #ccc;
 }
 
 .pc-section-contents > .contents > .contents-text-2l > p:last-child {
-  /* text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 1px dashed #FFBFBF; */
-
-  /* margin-bottom: 36px; */
   padding: 16px 0;
 }
 
@@ -424,7 +408,6 @@ header > .container {
   display: flex;
   justify-content: center;
   align-items: center;
-/*   height: 368px; */
   height: 348px;
 }
 
@@ -434,23 +417,19 @@ header > .container {
 
 .contents-img > img.width100 {
   width: 100%;
-/*   max-height: calc(368px - 36px - 48px - 16px); */
   max-height: calc(348px - 36px - 48px - 16px);
   object-fit: contain;
 }
 
 .contents-img > img.height100 {
-/*   height: calc(368px - 36px); */
   height: 348px;
 }
 
 .contents-text {
-/*   height: 116px; */
   height: 136px;
 }
 
 .contents-text > h3 {
-  /* font-size: 22px; */
   font-size: 20px;
   font-weight: 300;
   border-bottom: 1px solid #ccc;
@@ -461,7 +440,6 @@ header > .container {
 }
 
 .contents-text > p {
-  /* font-size: 20px; */
   font-size: 18px;
 }
 
@@ -472,7 +450,6 @@ section > .container {
 section > .container > .section-contents_container > a {
   font-size: 20px;
   text-decoration: none;
-  /* margin-top: 4px; */
   text-align: right;
   padding-bottom: 4px;
   padding-right: 24px;
@@ -502,9 +479,7 @@ section > .container > .section-contents_container > small > a {
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px dashed #FFBFBF;
-  /* border-bottom: 1px dashed #F6D6D6; */
 }
-
 
 
 /* profile */
@@ -514,12 +489,10 @@ section > .container > .section-contents_container > small > a {
 }
 
 .pc-profile-h2 {
-  display: none;	
+  display: none;
 }
 
 .profile {
-  /* background-image: linear-gradient(0deg, rgba(249, 228, 231, 1), rgba(227, 238, 255, 1)); */
-  /* background: #E2ECDA; */
   background: #EEF0E6;
 }
 
@@ -532,11 +505,8 @@ section > .container > .section-contents_container > small > a {
 .profile-section-contents > .section-contents > .contents {
   background: inherit;
   padding: 0;
-  /* width: 100%; */
   text-align: left;
   height: 100%;
-
-  /* background: #eee; */
 }
 
 .profile-section-contents > .section-contents > .contents > .career > table {
@@ -597,7 +567,6 @@ section > .container > .section-contents_container > small > a {
 .profile-section-contents > .section-contents > .contents > .skill > h3 {
   font-size: 24px;
   font-weight: 300;
-  /* padding-bottom: 4px; */
   border-bottom: 1px solid #ccc;
   margin-bottom: 28px;
 }
@@ -613,9 +582,7 @@ section > .container > .section-contents_container > small > a {
   border-radius: 4px 0 0 4px;
   color: #fff;
   font-weight: 500;
-  /* margin-right: 12px; */
 }
-
 
 .profile-section-contents > .section-contents > .contents > .skill > .skill-container >  .skill-level-container {
   display: flex;
@@ -625,7 +592,6 @@ section > .container > .section-contents_container > small > a {
 }
 
 .profile-section-contents > .section-contents > .contents > .skill > .skill-container > .skill-level-container > .skill-level {
-  /* width: calc((100% - 12px) / 5); */
   width: calc(100% / 5);
   height: 40px;
   background: #fffff9;
@@ -700,12 +666,10 @@ section > .container > .section-contents_container > small > a {
 }
 
 .illustrator {
-  /* background: #ff9900; */
   background: #F9BA33;
 }
 
 .photoshop {
-  /* background: #3399ff; */
   background: #7fbfff;
 }
 
@@ -714,11 +678,8 @@ section > .container > .section-contents_container > small > a {
 }
 
 .html-css {
-  /* background: #ff7fbf; */
-  /* background: #dc6b9a; */
   background: #ffa3d1;
 }
-
 
 .profile-section-contents > .section-contents > .contents > .inquiry {
   font-size: 18px;
@@ -748,12 +709,14 @@ section > .container > .section-contents_container > small > a {
   align-items: center;
 }
 
+
 /* footer */
+
 footer {
-  /* background: rgba(249, 228, 231, 1); */
   height: 48px;
   bottom: 0;
   width: 100%;
+  background: #EEF0E6;
 }
 
 footer small {
@@ -761,7 +724,6 @@ footer small {
   line-height: 48px;
 }
 
-/* } */
 
 /* @media (min-width: 860px) */
 @media (min-width: 950px) {
@@ -769,17 +731,13 @@ footer small {
     max-width: 950px;
     width: 950px;
     margin: 0 auto;
-/*     padding: 72px 36px; */
   }
 
   :root{
     scroll-padding: 280px;
-  	/* scroll-behavior: smooth; */
   }
 
   header {
-    /* background-image: linear-gradient(0deg, rgba(255, 252, 219, 1), rgba(220, 255, 242, 1));
-    position: relative; */
     height: 280px;
     position: fixed;
     top: 0;
@@ -791,21 +749,16 @@ footer small {
     max-width: 100%;
   }
 
-  /* header > .container {
-    padding: 20px 40px;
-  } */
-
   header > .container {
     height: calc(280px - 20px - 20px - 40px);
 
-    border: solid 2px #fff;    	/* 内側の線になる一本線の枠線をひく*/
-  	outline: solid 4px #fff;    /* 外側の線になる5pxの一本線の枠線をひく*/
-  	outline-offset: 4px;        /* 内側の線になる一本線の枠線をひく*/
-  	margin: 20px;            	/* outlineの値＋outline-offsetの値*/
+    border: solid 2px #fff;
+  	outline: solid 4px #fff;
+  	outline-offset: 4px;
+  	margin: 20px;
     width: 100%;
     max-width: 100%;
   }
-
 
   .pc-title {
     display: block;
@@ -842,7 +795,6 @@ footer small {
     margin: 0;
   }
 
-
   .contents-text > h3 {
     font-size: 20px;
   }
@@ -850,7 +802,6 @@ footer small {
   .contents-text > p {
     font-size: 18px
   }
-
 
   .contents:last-of-type {
     flex-grow: 0;
@@ -868,7 +819,6 @@ footer small {
   .pc-section-contents > .contents:last-of-type {
     margin-bottom: 0;
   }
-
 
   .detail-section-contents_container {
     display: flex;
@@ -911,10 +861,10 @@ footer small {
 
   .sp-profile-h2 {
   display: none;
-}
+  }
 
-.pc-profile-h2 {
-  display: block;	
-}
+  .pc-profile-h2 {
+    display: block;
+  }
 
 }
