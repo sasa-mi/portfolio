@@ -7,6 +7,15 @@
   color: #666;
 }
 
+.vertical {
+  display:inline-block;
+  height: 4px;
+  width: 18px;
+  margin-top: 14px;
+  margin-bottom: 2px;
+  transform: rotate(90deg);
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -17,7 +26,7 @@ html {
 }
 
 body {
-  font-size: 20px;
+  font-size: 18px;
 
   font-family: "Shippori Mincho B1", serif;
   font-weight: 400;
@@ -39,7 +48,8 @@ body {
     repeat-y;
 
   background-size:
-    76px;
+    /* 76px; */
+    56px;
 }
 
 h1 {
@@ -202,8 +212,9 @@ section > .container {
   height: 776px;
 }
 
-.summary > .image {
-  height: 240px;
+.summary > .container > .image > img {
+  /* height: 240px; */
+  height: 200px;
 }
 
 .summary .text {
@@ -218,12 +229,13 @@ section > .container {
 
 .beans .text {
   height: 408px;
+  height: 392px;
   display: flex;
   justify-content: center;
 }
 
 .beans small {
-  font-size: 15px;
+  font-size: 14px;
   margin-right: 16px;
 }
 
@@ -267,7 +279,7 @@ section > .container {
 }
 
 .beans-detail-price {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   width: 180px;
@@ -314,7 +326,7 @@ section > .container {
 }
 
 .read-more > a {
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   border-bottom: dashed 2px #826F66;
   padding-bottom: 8px;
@@ -329,7 +341,8 @@ section > .container {
 }
 
 .cafe .text {
-  height: 320px;
+  /* height: 320px; */
+  height: 300px;
   display: flex;
   justify-content: center;
 }
@@ -510,11 +523,13 @@ section > .container {
 }
 
 .access .map {
-  height: 360px;
+  /* height: 360px; */
+  height: 280px;
 }
 
 .access .map iframe {
-  height: 360px;
+  /* height: 360px; */
+  height: 280px;
   width: 100%;
   border-radius: 8px;
   filter:grayscale(50%);-webkit-filter:grayscale(50%);
@@ -586,6 +601,15 @@ small {
 
   .sp-logo {
     display: none;
+  }
+
+  .vertical {
+    display:inline-block;
+    height: 4px;
+    width: 22px;
+    margin-top: 14px;
+    margin-bottom: 2px;
+    transform: rotate(90deg);
   }
 
   body {
@@ -749,7 +773,8 @@ small {
   }
 
   .summary > .image {
-    height: 240px;
+    /* height: 240px; */
+    height: 200px;
   }
 
   .summary > .container {
