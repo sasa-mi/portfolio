@@ -227,7 +227,8 @@ section > .container {
   height: 300px;
   width: 100%;
   width: auto;
-  line-height: 1.7;
+  /* line-height: 1.7; */
+  line-height: 1.5;
   margin-bottom: 20px;
   display: block;
 }
@@ -326,15 +327,16 @@ section > .container {
 
 .title-container {
   /* margin-right: 24px; */
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .title {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 22px;
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   font-style: normal;
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
 
@@ -444,7 +446,8 @@ section > .container {
 }
 
 .price > .container > .price-detail-container {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -496,7 +499,8 @@ section > .container {
 
   margin-right: 0;
   /* font-size: 24px; */
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: 18px;
 
   display: flex;
   flex-direction: column;
@@ -515,14 +519,15 @@ section > .container {
   /* height: 100px; */
   height: 92px;
   padding-top: 10px;
-  margin-left: 12px;
+  /* margin-left: 12px; */
   margin-left: 8px;
 
 }
 
 .access-text {
-    padding-right: 0;
-  margin-left: 20px;
+  padding-right: 0;
+  /* margin-left: 20px; */
+  margin-left: 12px;
 }
 
 .access-text > p > .small {
@@ -542,14 +547,17 @@ section > .container {
 
 .sns-icons > a {
   margin-bottom: 20px;
-  width: 64px;
-  height: 64px;
+  /* width: 64px;
+  height: 64px; */
+  width: 56px;
+  height: 56px;
   background: #333;
   margin-bottom: 20px;
 }
 
 .sns-icons > a > i {
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 32px;
   display: block;
   color: #fff;
   text-align: center;
@@ -945,10 +953,17 @@ footer small {
     height: 316px;
   }
 
-  .price > .container {
+  .price > .container > .price-detail-container {
+  font-size: 20px;
+}
 
+  .price > .container {
     padding: 30px 0;
   }
+
+  .price > .container > .price-detail-container > small {
+  font-size: 16px;
+}
 
 
   .access {
@@ -982,6 +997,21 @@ footer small {
     margin-left: 24px;
     text-align: center;
     margin-bottom: 0;
+  }
+
+  .access > .container > .access-detail {
+  font-size: 20px;
+  }
+
+  .access-title {
+    font-size: 20px;
+    line-height: 33px;
+    background: #333;
+    color: #fff;
+    width: 32px;
+    height: 100px;
+    padding-top: 10px;
+    margin-left: 8px;
   }
 
   .sns-icons > a:hover {
