@@ -26,6 +26,7 @@ html {
 }
 
 body {
+  /* font-size: 20px; */
   font-size: 18px;
 
   font-family: "Shippori Mincho B1", serif;
@@ -235,6 +236,7 @@ section > .container {
 }
 
 .beans small {
+  /* font-size: 15px; */
   font-size: 14px;
   margin-right: 16px;
 }
@@ -279,6 +281,7 @@ section > .container {
 }
 
 .beans-detail-price {
+  /* font-size: 18px; */
   font-size: 16px;
   display: flex;
   justify-content: space-between;
@@ -326,6 +329,7 @@ section > .container {
 }
 
 .read-more > a {
+  /* font-size: 18px; */
   font-size: 16px;
   text-decoration: none;
   border-bottom: dashed 2px #826F66;
@@ -353,7 +357,8 @@ section > .container {
   width: 100%;
 
   height: 692px;
-  padding: 40px;
+  /* padding: 40px; */
+  padding: 40px 20px;
   margin-bottom: 0;
 
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
