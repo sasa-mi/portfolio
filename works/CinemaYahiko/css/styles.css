@@ -10,39 +10,42 @@
 	scroll-behavior: smooth;
 }
 
+.vertical {
+  display:inline-block;
+  height: 4px;
+  width: 12px;
+  margin-top: 22px;
+  margin-bottom: 2px;
+  transform: rotate(90deg);
+}
+
+.title-container > p > .vertical {
+  display:inline-block;
+  height: 4px;
+  width: 8px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  transform: rotate(90deg);
+}
+
+.special > .title-container > p > .vertical {
+  display:inline-block;
+  height: 4px;
+  width: 12px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+  transform: rotate(90deg);
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* .noto-serif-jp-regular {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.noto-serif-jp-semibold {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.noto-serif-jp-black {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.noto-sans-jp {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
-
 
 body {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
   font-family: "Noto Serif JP", serif;
   font-weight: 400;
   font-style: normal;
@@ -85,7 +88,6 @@ header > .container {
   margin: 0;
   padding: 60px 0;
   text-align: center;
-  /* background: #ccc; */
 }
 
 .sp-menu img {
@@ -148,7 +150,8 @@ header > .container {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 32px;
   line-height: 96px;
   display: block;
   text-align: left;
@@ -159,9 +162,6 @@ header > .container {
 }
 
 section > .container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   padding: 20px 28px;
 }
 
@@ -170,7 +170,6 @@ section > .container {
 .web-reservation {
   height: 300px;
   height: 340px;
-  /* background: #666; */
 }
 
 .web-reservation > .container {
@@ -184,8 +183,7 @@ section > .container {
   height: 240px;
   width: 100%;
   object-fit: cover;
-  object-position: 0px -28px;
-  object-position: 0px 0px;
+  object-position: center -4px;
   vertical-align: bottom;
 }
 
@@ -219,26 +217,17 @@ section > .container {
 .summary > .container {
   writing-mode: vertical-rl;
   text-orientation: upright;
-  /* position: absolute; */
   right: 0;
   width: 100%;
   display: flex;
 }
 
 .summary > .container > .text {
-  /* writing-mode: vertical-rl;
-  text-orientation: upright;
-  position: absolute;
-  right: 0
-  width: 100%;
-  display: flex; */
-
   height: 288px;
   height: 300px;
   width: 100%;
   width: auto;
   line-height: 1.7;
-  /* background: #fff; */
   margin-bottom: 20px;
   display: block;
 }
@@ -247,9 +236,12 @@ section > .container {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 36px;
-  width: 60px;
-  line-height: 52px;
+  /* font-size: 36px; */
+  font-size: 32px;
+  /* width: 60px; */
+  width: 56px;
+  /* line-height: 52px; */
+  line-height: 48px;
   background: #fff;
   text-align: center;
   border: solid 4px #000;
@@ -261,7 +253,6 @@ section > .container {
   height: 240px;
   width: 100%;
   object-fit: cover;
-  object-position: 0px -28px;
   object-position: 0px -56px;
   vertical-align: bottom;
 }
@@ -293,8 +284,9 @@ section > .container {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 36px;
-  line-height: 52px;
+  /* font-size: 36px; */
+  font-size: 32px;
+  /* line-height: 52px; */
   line-height: 48px;
   background: #fff;
   text-align: center;
@@ -330,11 +322,11 @@ section > .container {
 
 .lineup > .container > .lineup-container-wrapper  > .last, .lineup > .container > .lineup-container-wrapper  > .special {
   border-bottom: none;
-  /* background: #ccc; */
 }
 
 .title-container {
-  margin-right: 24px;
+  /* margin-right: 24px; */
+  margin-right: 16px;
 }
 
 .title {
@@ -345,28 +337,30 @@ section > .container {
   margin-left: 4px;
 }
 
-.dash {
-  font-size: 12px;
-  margin-top: 6px;
-}
+
 
 .special {
   height: 312px;
 }
 
 .special  > h3 {
-  font-size: 34px;
-  width: 120px;
+  /* font-size: 34px; */
+  font-size: 32px;
+  /* width: 120px; */
+  width: 116px;
   color: #fff;
   background: #333;
-  line-height: 48px;
-  padding-right: 12px;
+  /* line-height: 48px; */
+  line-height: 44px;
+  /* padding-right: 12px; */
+  padding-right: 14px;
   padding-top: 22px;
   margin-left: 36px;
 }
 
 .special > h4 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 28px;
   margin-left: 0;
   padding-left: 0;
 }
@@ -375,13 +369,13 @@ section > .container {
   margin-right: 0;
   padding-right: 0;
   margin-right: 16px;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 28px;
 }
 
 .past-lineup-container {
   height: 312px;
   height: calc(328px + 20px);
-  /* background: #ccc; */
   margin-top: 0;
   padding-top: 0;
 }
@@ -413,15 +407,7 @@ section > .container {
   font-size: 24px;
 }
 
-
-/* .title-container {
-  position: relative;
-} */
-
 .long {
-  /* position: relative;
-  transform: scaleY(0.9); */
-
   font-size: 22px;
   letter-spacing: -2px;
 }
@@ -435,63 +421,38 @@ section > .container {
 }
 
 .price > .container {
-  /* background: #ccc; */
   writing-mode: vertical-rl;
   text-orientation: upright;
-  /* position: absolute;
-  right: 0; */
-  /* padding: 0 28px; */
-  /* margin: 0 28px; */
   width: 100%;
-  /* margin: 0;
-  padding: 0; */
 }
 
 .price > .container > h1 {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 36px;
-  width: 60px;
-  line-height: 52px;
+  /* font-size: 36px; */
+  font-size: 32px;
+  /* width: 60px; */
+  width: 56px;
+  /* line-height: 52px; */
+  line-height: 48px;
   background: #fff;
   text-align: center;
   border: solid 4px #000;
   margin-left: 24px;
+  height: calc(296px - 40px);
 }
 
 .price > .container > .price-detail-container {
   font-size: 24px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: space-between;
-  /*
-
-  margin: 0;
-  padding: 0; */
-}
-
-.price > .container > .price-detail-container > .price-detail {
-  /* display: flex;
-   justify-content: space-between; */
-  /*
-  flex-direction: row;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: space-between; */
-
-}
-
-.price > .container > .price-detail-container > .price-detail > p {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  display: inline-block; */
 }
 
 .price > .container > .price-detail-container > small {
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 16px;
   display: flex;
   align-items: flex-end;
   margin-right: 28px;
@@ -504,10 +465,6 @@ section > .container {
 }
 
 .access > .container {
-  /* display: flex;
-  flex-direction: column; */
-  /* background: #ccc; */
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -517,30 +474,29 @@ section > .container {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 36px;
-  line-height: 52px;
-  line-height: 48px;
+  /* font-size: 36px; */
+  font-size: 32px;
+  /* line-height: 48px; */
+  line-height: 44px;
   background: #fff;
   text-align: center;
   border: solid 4px #000;
-  height: 60px;
+  /* height: 60px; */
+  height: 56px;
   width: 100%;
   margin-bottom: 16px;
-  /* position: absolute; */
-  /* right: 0; */
 }
 
 .access > .container > .access-detail {
   height: 304px;
-  /* background: #777; */
   writing-mode: vertical-rl;
   text-orientation: upright;
 
   -ms-writing-mode: tb-rl;
 
-  /* position: absolute; */
   margin-right: 0;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 22px;
 
   display: flex;
   flex-direction: column;
@@ -550,12 +506,14 @@ section > .container {
 }
 
 .access-title {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
   line-height: 33px;
   background: #333;
   color: #fff;
   width: 32px;
-  height: 100px;
+  /* height: 100px; */
+  height: 92px;
   padding-top: 10px;
   margin-left: 12px;
   margin-left: 8px;
@@ -568,7 +526,8 @@ section > .container {
 }
 
 .access-text > p > .small {
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 16px;
 }
 
 .access > .container > .access-detail > p {
@@ -632,14 +591,8 @@ footer small {
 }
 
 .pastLineup {
-  height: calc(1296px + 78px);
   height: calc(2428px + 20px + 68px);
-  /* background: #ccc; */
 }
-
- /* .pastLineup .special {
-   background: #fff;
- } */
 
 .arrow-icons {
   display: flex;
@@ -670,16 +623,15 @@ footer small {
 
 /* @media (min-width: 860px) */
 @media (min-width: 950px) {
+
+  body {
+    font-size: 20px;
+  }
+
   .container {
     max-width: 860px;
     width: 860px;
     margin: 0 auto;
-    /* padding: 80px 80px; */
-  }
-
-  :root{
-    /* scroll-padding: 360px;
-    scroll-padding: 760px; */
   }
 
   .sp-logo {
@@ -695,15 +647,13 @@ footer small {
     height: 760px;
     height: 720px;
     height: 710px;
-    /* position: fixed; */
+
     top: 0;
     left: 0;
     right: 0;
     z-index: 5;
     background: #eeedeb;
 
-    /* background: #ccc; */
-    /* position: relative; */
   }
 
   header > .container {
@@ -713,7 +663,6 @@ footer small {
 
   .pc-logo {
     display: block;
-    /* background: #eee; */
   }
 
   .pc-logo > a > img {
@@ -721,9 +670,6 @@ footer small {
     height: 160px;
     vertical-align: bottom;
     margin-bottom: 80px;
-
-    /* margin-top: 20px;
-    margin-bottom: 100px; */
   }
 
 
@@ -733,22 +679,11 @@ footer small {
     flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
-    /* justify-content: center; */
-    /* background: #ccc; */
   }
 
   .web-reservation-menu {
     height: 400px;
     height: 390px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* position: fixed;
-    position: relative; */
-    /* position: relative; */
-    /* top: 360px; */
-    /* left: 0;
-    right: 0; */
-    /* z-index: 3; */
   }
 
   .web-reservation {
@@ -757,7 +692,6 @@ footer small {
     height: 320px;
     height: 400px;
     height: 390px;
-    /* background: #666; */
   }
 
   .web-reservation > .container {
@@ -774,7 +708,6 @@ footer small {
   }
 
   .pc-menu {
-    /* background: #555; */
     display: block;
     width: 430px;
     height: 320px;
@@ -786,7 +719,6 @@ footer small {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: end; */
   }
 
   .pc-menu > nav > ul > li {
@@ -827,31 +759,18 @@ footer small {
 
 
   .wrapper {
-    /* margin-top: 360px; */
-    /* margin-top: 760px; */
-    /* margin-top: 720px; */
-    /* margin-top: 710px; */
-
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
   }
 
   .web-reservation img {
-    /* height: 200px;
-    height: 240px;
-    width: 100%;
-    object-fit: cover; */
-    object-position: 0px -28px;
     object-position: 0px 0px;
-    /* vertical-align: bottom; */
+    object-position: center -4px;
   }
 
   .summary {
-    /* background: #777; */
-
     height: 288px;
     height: 330px;
     height: 360px;
@@ -902,15 +821,12 @@ footer small {
     height: 340px;
     vertical-align: top;
     object-fit: cover;
-    object-position: 0px -28px;
-    object-position: -8px -40px;
+    object-position: 0px -40px;
   }
 
 
   .lineup {
     height: 1296px;
-    /* height: 1326px; */
-    /* background: #ddd; */
   }
 
   .lineup > .container {
@@ -1015,23 +931,6 @@ footer small {
 
   .past-lineup-container > .container > .past-lineup > a {
     width: 400px;
-
-    /* display: inline-block;
-    text-align: center;
-    height: 48px;
-    line-height: 44px;
-    width: 100%;
-    background: #fff;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    text-decoration: none;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    color: #000;
-    margin-top: 20px;
-    font-size: 24px; */
   }
 
 
@@ -1055,16 +954,9 @@ footer small {
   .access {
     height: 684px;
     height: 364px;
-    /* background: #fff; */
-    /* display: flex;
-    flex-direction: column; */
   }
 
   .access > .container {
-    /* display: flex;
-    flex-direction: column; */
-    /* background: #ccc; */
-    /* position: relative; */
     height: 364px;
     padding: 30px 0;
     display: flex;
@@ -1085,43 +977,22 @@ footer small {
     width: 60px;
     line-height: 52px;
     height: 304px;
-    /* background: #fff; */
 
     border: solid 4px #000;
     margin-left: 24px;
     text-align: center;
     margin-bottom: 0;
-    /* margin: 0;
-    padding: 0; */
   }
-
-
-
-  /* font-family: "Noto Sans JP", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 52px;
-  line-height: 48px;
-  background: #fff;
-  text-align: center;
-  border: solid 4px #000;
-  height: 60px;
-  width: 100%;
-  margin-bottom: 16px; */
 
   .sns-icons > a:hover {
     background: #fff;
     border: 4px solid #333;
-
   }
 
   .sns-icons > a > i:hover {
     color: #333;
     line-height: 44px;
   }
-
-
 
   .access .map {
     width: 372px;
@@ -1144,19 +1015,9 @@ footer small {
 
   footer {
     height: 102px;
-    /* width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center; */
   }
 
   footer small {
-    /* font-size: 13px;
-
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal; */
     margin-bottom: 30px;
   }
 
