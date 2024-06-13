@@ -96,7 +96,8 @@ header > .container {
   top: 28px;
   right: 28px;
   z-index: 3;
-  width: 60px;
+  /* width: 60px; */
+  width: 56px;
 }
 
 .sp-menu #open {
@@ -347,17 +348,21 @@ section > .container {
 
 .special  > h3 {
   /* font-size: 34px; */
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: 28px;
   /* width: 120px; */
-  width: 116px;
+  /* width: 116px; */
+  width: 100px;
   color: #fff;
   background: #333;
   /* line-height: 48px; */
-  line-height: 44px;
+  /* line-height: 44px; */
+  line-height: 36px;
   /* padding-right: 12px; */
   padding-right: 14px;
   padding-top: 22px;
-  margin-left: 36px;
+  /* margin-left: 28px; */
+  margin-left: 20px;
 }
 
 .special > h4 {
@@ -370,7 +375,8 @@ section > .container {
 .special > .title-container {
   margin-right: 0;
   padding-right: 0;
-  margin-right: 16px;
+  /* margin-right: 16px; */
+  margin-right: 8px;
   /* font-size: 30px; */
   font-size: 28px;
 }
@@ -418,7 +424,8 @@ section > .container {
 /* 料金 */
 
 .price {
-  height: 296px;
+  /* height: 296px; */
+  height: 268px;
   width: 100%;
 }
 
@@ -442,7 +449,8 @@ section > .container {
   text-align: center;
   border: solid 4px #000;
   margin-left: 24px;
-  height: calc(296px - 40px);
+  /* height: calc(296px - 40px); */
+  height: calc(268px - 40px);
 }
 
 .price > .container > .price-detail-container {
@@ -949,9 +957,13 @@ footer small {
 
   .price {
     width: 430px;
-    height: 286px;
+    /* height: 286px; */
     height: 316px;
   }
+
+  .price > .container > h1 {
+  height: calc(316px - 60px);
+}
 
   .price > .container > .price-detail-container {
   font-size: 20px;
@@ -1021,7 +1033,8 @@ footer small {
 
   .sns-icons > a > i:hover {
     color: #333;
-    line-height: 44px;
+    /* line-height: 44px; */
+    line-height: 40px;
   }
 
   .access .map {
