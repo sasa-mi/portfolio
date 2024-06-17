@@ -283,7 +283,7 @@ header > .container {
 
 .medical-hours table td {
   background: #e3f1f1;
-  padding: 0 6px;
+  padding: 0 8px;
   text-align: center;
 }
 
@@ -815,7 +815,8 @@ footer small {
   .medical-hours table td {
     background: #e3f1f1;
     /* padding: 0 12px; */
-    padding: 0 4px 0 18px;
+    /* padding: 0 4px 0 18px; */
+    padding: 0 8px;
     text-align: center;
   }
 
