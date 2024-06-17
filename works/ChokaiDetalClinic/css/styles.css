@@ -286,6 +286,7 @@ header > .container {
   /* padding: 0 8px; */
   /* padding: 0 10px; */
   text-align: center;
+  width: calc(100% - 24px -24px - 20%);
 }
 
 .medical-hours table .time {
