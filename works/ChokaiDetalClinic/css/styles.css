@@ -443,7 +443,7 @@ header > .container {
 
 .reservation a {
   /* font-size: 24px; */
-  font-size: 22px;
+  font-size: 20px;
   line-height: 84px;
   font-weight: 700;
   color: #fff;
@@ -956,5 +956,9 @@ footer small {
   .contact button a:hover {
     background: #e3f1f1;
     color: #4797d1;
+  }
+
+  .reservation a {
+    font-size: 24px;
   }
 }
