@@ -283,14 +283,15 @@ header > .container {
 
 .medical-hours table td {
   background: #e3f1f1;
-  padding: 0 12px;
+  padding: 0 4px;
+  text-align: center;
 }
 
 .medical-hours table .time {
   background: #bedaef;
   text-align: right;
-  width: 20%;
-  max-width: 20%;
+  padding: 0 8px;
+  /* width: 20%; */
 }
 
 .medical-hours table .white > td {
@@ -809,6 +810,20 @@ footer small {
 
   .medical-hours-container table {
     margin: 0;
+  }
+
+  .medical-hours table td {
+    background: #e3f1f1;
+    /* padding: 0 12px; */
+    padding: 0 4px 0 18px;
+    text-align: center;
+  }
+
+  .medical-hours table .time {
+    background: #bedaef;
+    text-align: right;
+    padding: 0 20px;
+    width: 20%;
   }
 
 
